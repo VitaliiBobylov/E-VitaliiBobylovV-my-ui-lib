@@ -28,7 +28,6 @@ export default function Input({
         {...props}
       />
 
-      {/* Clear button */}
       {clearable && value && (
         <button
           onClick={() => setValue("")}
@@ -38,7 +37,6 @@ export default function Input({
         </button>
       )}
 
-      {/* Password toggle */}
       {isPassword && (
         <button
           onClick={() => setShow(!show)}
